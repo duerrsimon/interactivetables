@@ -2,6 +2,7 @@
 # Load on top of common defaults.
 to: html5
 output-file: output/manuscript.html
+include-in-header: build/plugins/tabulator-head.html
 include-after-body:
 - build/themes/default.html
 - build/plugins/anchors.html
@@ -15,6 +16,7 @@ include-after-body:
 - build/plugins/math.html
 - build/plugins/hypothesis.html
 - build/plugins/analytics.html
+- build/plugins/tabulator.html
 variables:
   math: ''
 html-math-method:
