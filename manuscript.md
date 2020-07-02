@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/5c893cafbe11402346df4e56d4e5ddf9cef59c74/" />
+  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/b910729b3a6766b6d19215c890a035f20d0f6958/" />
 
-  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/5c893cafbe11402346df4e56d4e5ddf9cef59c74/" />
+  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/b910729b3a6766b6d19215c890a035f20d0f6958/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/5c893cafbe11402346df4e56d4e5ddf9cef59c74/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/b910729b3a6766b6d19215c890a035f20d0f6958/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://duerrsimon.github.io/interactivetables/v/5c893cafbe11402346df4e56d4e5ddf9cef59c74/))
+([permalink](https://duerrsimon.github.io/interactivetables/v/b910729b3a6766b6d19215c890a035f20d0f6958/))
 was automatically generated
-from [duerrsimon/interactivetables@5c893ca](https://github.com/duerrsimon/interactivetables/tree/5c893cafbe11402346df4e56d4e5ddf9cef59c74)
+from [duerrsimon/interactivetables@b910729](https://github.com/duerrsimon/interactivetables/tree/b910729b3a6766b6d19215c890a035f20d0f6958)
 on July 2, 2020.
 </em></small>
 
@@ -355,9 +355,33 @@ White background specified to serve as a backdrop for transparent sections of th
 | Game 8 | 3 | 1 | 38 | 34 |
 | Game 9 | 13 | 10 | 23 | 13 |
 
-</div>
 Table: A table with a top caption and specified relative column widths.
 {#tbl:interactive-bowling}
+</div>
+
+
+| *Bowling Scores* | Jane          | John          | Alice         | Bob           |
+|:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|
+| Game 1 | 150 | 187 | 210 | 105 |
+| Game 2 |  98 | 202 | 197 | 102 |
+| Game 3 | 123 | 180 | 238 | 134 |
+| Game 4 | 35 | 182 | 328 | 124 |
+| Game 5 | 23 | 186 | 58 | 174 |
+| Game 6 | 13 | 181 | 38 | 136 |
+| Game 7 | 153 | 180 | 28 | 134 |
+| Game 8 | 3 | 1 | 38 | 34 |
+| Game 9 | 13 | 10 | 23 | 13 |
+| Game 7 | 153 | 180 | 28 | 134 |
+| Game 8 | 3 | 1 | 38 | 34 |
+| Game 9 | 13 | 10 | 23 | 13 |
+| Game 7 | 153 | 180 | 28 | 134 |
+| Game 8 | 3 | 1 | 38 | 34 |
+| Game 9 | 13 | 10 | 23 | 13 |
+<!-- $id="element_id" class="interactive" $data-perPage="10" -->
+
+Table: A table with a top caption and specified relative column widths.
+{#tbl:interactive-bowling-2}
+
 
 
 | *Bowling Scores* | Jane          | John          | Alice         | Bob           |
