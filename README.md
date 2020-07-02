@@ -1,7 +1,7 @@
 # Output directory containing the formatted manuscript
 
 The [`gh-pages`](https://github.com/duerrsimon/interactivetables/tree/gh-pages) branch hosts the contents of this directory at <https://duerrsimon.github.io/interactivetables/>.
-The permalink for this webpage version is <https://duerrsimon.github.io/interactivetables/v/5c893cafbe11402346df4e56d4e5ddf9cef59c74/>.
+The permalink for this webpage version is <https://duerrsimon.github.io/interactivetables/v/b910729b3a6766b6d19215c890a035f20d0f6958/>.
 To redirect to the permalink for the latest manuscript version at anytime, use the link <https://duerrsimon.github.io/interactivetables/v/freeze/>.
 
 ## Files
@@ -35,4 +35,4 @@ Verifying timestamps with the `ots verify` command requires running a local bitc
 ## Source
 
 The manuscripts in this directory were built from
-[`5c893cafbe11402346df4e56d4e5ddf9cef59c74`](https://github.com/duerrsimon/interactivetables/commit/5c893cafbe11402346df4e56d4e5ddf9cef59c74).
+[`b910729b3a6766b6d19215c890a035f20d0f6958`](https://github.com/duerrsimon/interactivetables/commit/b910729b3a6766b6d19215c890a035f20d0f6958).
