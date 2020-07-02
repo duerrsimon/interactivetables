@@ -1,21 +1,74 @@
+<style>
+
+    .tabulator-cell, .tabulator-col{
+        padding: 10px !important;
+    }
+    
+    .tabulator .tabulator-footer{
+        border-top:0px
+    }
+    .tabulator-tableHolder{
+         border:1px solid rgba(0, 0, 0, 0.3) !important;
+         
+    }
+    
+    .tabulator-row .tabulator-cell:last-of-type {
+        border-right: 1px solid rgba(0, 0, 0, 0.3)!important;
+    }
+    .tabulator-header{
+        border:1px solid rgba(0, 0, 0, 0.3) !important;
+        border-bottom: none !important;
+        
+    }
+    .tabulator-headers{
+        border:none !important;
+    }
+    
+    
+    </style>
+
+
+
 <script>
 var tables = document.getElementsByClassName("interactive");
-console.log(tables);
-for (var i = 0; i < tables.length; i++) {
-   console.log(tables.item(i).childNodes[0])
-   var table = new Tabulator(tables.item(i).firstElementChild, {});
+var tabulators = []
+
+for (var i = 0; i < tables.length; i++) { 
+    
+    var btn_container=document.createElement("div");
+    btn_container.classList.add("tabulator-footer");
+
+    var btn=document.createElement("BUTTON"); // Create a <button> element
+    btn.classList.add("tabulator-page");
+
+    btn.innerHTML = "csv";
+    btn.setAttribute('data-integer', i)
+    //tables[i].appendChild(btn);
+    btn.addEventListener("click", function(){
+    tabulators[btn.dataset.integer].download("csv", "data.csv");
+    });
+
+    var btnxslx = document.createElement("BUTTON"); // Create a <button> element
+    btnxslx.innerHTML = "xslx";
+    btnxslx.classList.add("tabulator-page");
+    btnxslx.setAttribute('data-integer', i)
+    //tables[i].appendChild(btnxslx);
+    btnxslx.addEventListener("click", function(){
+        tabulators[btnxslx.dataset.integer].download("xlsx", "data.xlsx", {sheetName:"TableData"});
+    });
+
+    btn_container.appendChild(btn);
+    btn_container.appendChild(btnxslx);
+
+    tabulators.push(new Tabulator(tables.item(i).firstElementChild, {
+            layout:"fitColumns", 
+            paginationSize:tables[i].dataset.perpage, 
+            pagination:"local",
+            footerElement:btn_container,
+            })
+        );
+
 }
 
-   
-    document.getElementById("download-csv").addEventListener("click", function(){
-    table.download("csv", "data.csv");
-});
-
-
-
-//trigger download of data.xlsx file
-document.getElementById("download-xlsx").addEventListener("click", function(){
-    table.download("xlsx", "data.xlsx", {sheetName:"My Data"});
-});
 
 </script>
