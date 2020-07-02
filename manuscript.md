@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/76903d35ddc42860970e7a110d29fd515d22f3ce/" />
+  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/1fd2754831b7f807d155ea373b5241db8ec8f110/" />
 
-  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/76903d35ddc42860970e7a110d29fd515d22f3ce/" />
+  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/1fd2754831b7f807d155ea373b5241db8ec8f110/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/76903d35ddc42860970e7a110d29fd515d22f3ce/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/1fd2754831b7f807d155ea373b5241db8ec8f110/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://duerrsimon.github.io/interactivetables/v/76903d35ddc42860970e7a110d29fd515d22f3ce/))
+([permalink](https://duerrsimon.github.io/interactivetables/v/1fd2754831b7f807d155ea373b5241db8ec8f110/))
 was automatically generated
-from [duerrsimon/interactivetables@76903d3](https://github.com/duerrsimon/interactivetables/tree/76903d35ddc42860970e7a110d29fd515d22f3ce)
+from [duerrsimon/interactivetables@1fd2754](https://github.com/duerrsimon/interactivetables/tree/1fd2754831b7f807d155ea373b5241db8ec8f110)
 on July 2, 2020.
 </em></small>
 
