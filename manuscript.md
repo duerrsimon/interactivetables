@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/f1994de637e6b82da52c28fd3069d39bf2bab39e/" />
+  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/234a6cc75b7bdaadddbacadebb2f8fd7d673629d/" />
 
-  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/f1994de637e6b82da52c28fd3069d39bf2bab39e/" />
+  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/234a6cc75b7bdaadddbacadebb2f8fd7d673629d/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/f1994de637e6b82da52c28fd3069d39bf2bab39e/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/234a6cc75b7bdaadddbacadebb2f8fd7d673629d/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://duerrsimon.github.io/interactivetables/v/f1994de637e6b82da52c28fd3069d39bf2bab39e/))
+([permalink](https://duerrsimon.github.io/interactivetables/v/234a6cc75b7bdaadddbacadebb2f8fd7d673629d/))
 was automatically generated
-from [duerrsimon/interactivetables@f1994de](https://github.com/duerrsimon/interactivetables/tree/f1994de637e6b82da52c28fd3069d39bf2bab39e)
+from [duerrsimon/interactivetables@234a6cc](https://github.com/duerrsimon/interactivetables/tree/234a6cc75b7bdaadddbacadebb2f8fd7d673629d)
 on July 2, 2020.
 </em></small>
 
@@ -334,6 +334,8 @@ White background specified to serve as a backdrop for transparent sections of th
 ## Tables
 
 
+Table: A table with a top caption and specified relative column widths.
+{#tbl:interactive-bowling}
 
 <div class="interactive" data-perPage="10">
 
@@ -376,7 +378,7 @@ White background specified to serve as a backdrop for transparent sections of th
 | Game 9 | 13 | 10 | 23 | 13 |
 | Game 7 | 153 | 180 | 28 | 134 |
 | Game 8 | 3 | 1 | 38 | 34 |
-| Game 9 | 13 | 10 | 23 | 13 | <!-- class="interactive" -->
+| Game 9 | 13 | 10 | 23 | 13 | 
 
 Table: A table with a top caption and specified relative column widths.
 {#tbl:interactive-bowling-2}
