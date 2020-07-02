@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/" />
+  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/13de2ed7db7c6dafab4c8a5b61774a95d6a35ee2/" />
 
-  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/" />
+  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/13de2ed7db7c6dafab4c8a5b61774a95d6a35ee2/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/13de2ed7db7c6dafab4c8a5b61774a95d6a35ee2/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/))
+([permalink](https://duerrsimon.github.io/interactivetables/v/13de2ed7db7c6dafab4c8a5b61774a95d6a35ee2/))
 was automatically generated
-from [duerrsimon/interactivetables@4d8cbee](https://github.com/duerrsimon/interactivetables/tree/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760)
+from [duerrsimon/interactivetables@13de2ed](https://github.com/duerrsimon/interactivetables/tree/13de2ed7db7c6dafab4c8a5b61774a95d6a35ee2)
 on July 2, 2020.
 </em></small>
 
@@ -333,6 +333,11 @@ White background specified to serve as a backdrop for transparent sections of th
 
 ## Tables
 
+Table: A table with a top caption and specified relative column widths.
+{#tbl:bowling-scores-interactive}
+
+<div class="interactive">
+
 | *Bowling Scores* | Jane          | John          | Alice         | Bob           |
 |:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|
 | Game 1 | 150 | 187 | 210 | 105 |
@@ -351,7 +356,7 @@ White background specified to serve as a backdrop for transparent sections of th
 | Game 8 | 3 | 1 | 38 | 34 |
 | Game 9 | 13 | 10 | 23 | 13 |
 
-
+</div>
 
 
 | *Bowling Scores* | Jane          | John          | Alice         | Bob           |
