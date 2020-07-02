@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/ce827c7789163dca33dfa3bd2df7aa828e57485d/" />
+  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/" />
 
-  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/ce827c7789163dca33dfa3bd2df7aa828e57485d/" />
+  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/ce827c7789163dca33dfa3bd2df7aa828e57485d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://duerrsimon.github.io/interactivetables/v/ce827c7789163dca33dfa3bd2df7aa828e57485d/))
+([permalink](https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/))
 was automatically generated
-from [duerrsimon/interactivetables@ce827c7](https://github.com/duerrsimon/interactivetables/tree/ce827c7789163dca33dfa3bd2df7aa828e57485d)
+from [duerrsimon/interactivetables@4d8cbee](https://github.com/duerrsimon/interactivetables/tree/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760)
 on July 2, 2020.
 </em></small>
 
@@ -332,6 +332,27 @@ White background specified to serve as a backdrop for transparent sections of th
 ](https://raw.githubusercontent.com/manubot/resources/master/test/vector.svg?sanitize=true "Vector image"){#fig:vector-image height=2.5in .white}
 
 ## Tables
+
+| *Bowling Scores* | Jane          | John          | Alice         | Bob           |
+|:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|
+| Game 1 | 150 | 187 | 210 | 105 |
+| Game 2 |  98 | 202 | 197 | 102 |
+| Game 3 | 123 | 180 | 238 | 134 |
+| Game 4 | 35 | 182 | 328 | 124 |
+| Game 5 | 23 | 186 | 58 | 174 |
+| Game 6 | 13 | 181 | 38 | 136 |
+| Game 7 | 153 | 180 | 28 | 134 |
+| Game 8 | 3 | 1 | 38 | 34 |
+| Game 9 | 13 | 10 | 23 | 13 |
+| Game 7 | 153 | 180 | 28 | 134 |
+| Game 8 | 3 | 1 | 38 | 34 |
+| Game 9 | 13 | 10 | 23 | 13 |
+| Game 7 | 153 | 180 | 28 | 134 |
+| Game 8 | 3 | 1 | 38 | 34 |
+| Game 9 | 13 | 10 | 23 | 13 |
+
+
+
 
 | *Bowling Scores* | Jane          | John          | Alice         | Bob           |
 |:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|
