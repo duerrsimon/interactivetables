@@ -92,9 +92,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://duerrsimon.github.io/interactivetables/v/13de2ed7db7c6dafab4c8a5b61774a95d6a35ee2/">permalink</a>)
+(<a href="https://duerrsimon.github.io/interactivetables/v/5c893cafbe11402346df4e56d4e5ddf9cef59c74/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/duerrsimon/interactivetables/tree/13de2ed7db7c6dafab4c8a5b61774a95d6a35ee2">duerrsimon/interactivetables@13de2ed</a>
+from <a href="https://github.com/duerrsimon/interactivetables/tree/5c893cafbe11402346df4e56d4e5ddf9cef59c74">duerrsimon/interactivetables@5c893ca</a>
 on July 2, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -201,7 +201,7 @@ Manubot plugins provide easier, more convenient visualization of and navigation 
 <p>Figure <a href="#fig:wide-image">2</a></p>
 <p>Figure <a href="#fig:tall-image">3</a></p>
 <p>Figure <a href="#fig:vector-image">4</a></p>
-<p>Table <a href="#tbl:bowling-scores">1</a></p>
+<p>Table <a href="#tbl:bowling-scores">2</a></p>
 <p>Equation <a href="#eq:regular-equation">1</a></p>
 <p>Equation <a href="#eq:long-equation">2</a></p>
 <h2 id="quotes-and-code">Quotes and code</h2>
@@ -253,9 +253,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </figure>
 </div>
 <h2 id="tables">Tables</h2>
-<p>Table: A table with a top caption and specified relative column widths.
-{#tbl:bowling-scores-interactive}</p>
-<div class="interactive">
+<div class="interactive" data-perpage="10">
 <table>
 <thead>
 <tr class="header">
@@ -375,7 +373,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:bowling-scores" class="tablenos">
+<div id="tbl:interactive-bowling" class="tablenos">
 <table>
 <caption><span>Table 1:</span> A table with a top caption and specified relative column widths.
 </caption>
@@ -413,9 +411,9 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:constant-digits" class="tablenos">
+<div id="tbl:bowling-scores" class="tablenos">
 <table>
-<caption><span>Table 2:</span> A table too wide to fit within page.
+<caption><span>Table 2:</span> A table with a top caption and specified relative column widths.
 </caption>
 <colgroup>
 <col style="width: 5%" />
@@ -451,9 +449,9 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:1ae443a8-1ddb-46f3-9e18-ea7f1fcb4eaf" class="tablenos">
+<div id="tbl:constant-digits" class="tablenos">
 <table>
-<caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
+<caption><span>Table 3:</span> A table too wide to fit within page.
 </caption>
 <thead>
 <tr class="header">
@@ -481,6 +479,8 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
+<p>Table: A table with merged cells using the <code>attributes</code> plugin.
+{#tbl: merged-cells}</p>
 <h2 id="equations">Equations</h2>
 <p>A LaTeX equation:</p>
 <p><span id="eq:regular-equation" class="eqnos"><span class="math display">\[\int_0^\infty e^{-x^2} dx=\frac{\sqrt{\pi}}{2}\]</span><span class="eqnos-number">(1)</span></span> </p>
@@ -4516,25 +4516,78 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
 <!-- analytics plugin -->
 
 <!-- copy and paste code from Google Analytics or similar service here -->
+<style>
+
+    .tabulator-cell, .tabulator-col{
+        padding: 10px !important;
+    }
+    
+    .tabulator .tabulator-footer{
+        border-top:0px
+    }
+    .tabulator-tableHolder{
+         border:1px solid rgba(0, 0, 0, 0.3) !important;
+         
+    }
+    
+    .tabulator-row .tabulator-cell:last-of-type {
+        border-right: 1px solid rgba(0, 0, 0, 0.3)!important;
+    }
+    .tabulator-header{
+        border:1px solid rgba(0, 0, 0, 0.3) !important;
+        border-bottom: none !important;
+        
+    }
+    .tabulator-headers{
+        border:none !important;
+    }
+    
+    
+    </style>
+
+
+
 <script>
 var tables = document.getElementsByClassName("interactive");
-console.log(tables);
-for (var i = 0; i < tables.length; i++) {
-   console.log(tables.item(i).childNodes[0])
-   var table = new Tabulator(tables.item(i).firstElementChild, {});
+var tabulators = []
+
+for (var i = 0; i < tables.length; i++) { 
+    
+    var btn_container=document.createElement("div");
+    btn_container.classList.add("tabulator-footer");
+
+    var btn=document.createElement("BUTTON"); // Create a <button> element
+    btn.classList.add("tabulator-page");
+
+    btn.innerHTML = "csv";
+    btn.setAttribute('data-integer', i)
+    //tables[i].appendChild(btn);
+    btn.addEventListener("click", function(){
+    tabulators[btn.dataset.integer].download("csv", "data.csv");
+    });
+
+    var btnxslx = document.createElement("BUTTON"); // Create a <button> element
+    btnxslx.innerHTML = "xslx";
+    btnxslx.classList.add("tabulator-page");
+    btnxslx.setAttribute('data-integer', i)
+    //tables[i].appendChild(btnxslx);
+    btnxslx.addEventListener("click", function(){
+        tabulators[btnxslx.dataset.integer].download("xlsx", "data.xlsx", {sheetName:"TableData"});
+    });
+
+    btn_container.appendChild(btn);
+    btn_container.appendChild(btnxslx);
+
+    tabulators.push(new Tabulator(tables.item(i).firstElementChild, {
+            layout:"fitColumns", 
+            paginationSize:tables[i].dataset.perpage, 
+            pagination:"local",
+            footerElement:btn_container,
+            })
+        );
+
 }
 
-   
-    document.getElementById("download-csv").addEventListener("click", function(){
-    table.download("csv", "data.csv");
-});
-
-
-
-//trigger download of data.xlsx file
-document.getElementById("download-xlsx").addEventListener("click", function(){
-    table.download("xlsx", "data.xlsx", {sheetName:"My Data"});
-});
 
 </script>
 </body>
