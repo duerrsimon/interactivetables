@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/b910729b3a6766b6d19215c890a035f20d0f6958/" />
+  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/f1994de637e6b82da52c28fd3069d39bf2bab39e/" />
 
-  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/b910729b3a6766b6d19215c890a035f20d0f6958/" />
+  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/f1994de637e6b82da52c28fd3069d39bf2bab39e/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/b910729b3a6766b6d19215c890a035f20d0f6958/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/f1994de637e6b82da52c28fd3069d39bf2bab39e/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://duerrsimon.github.io/interactivetables/v/b910729b3a6766b6d19215c890a035f20d0f6958/))
+([permalink](https://duerrsimon.github.io/interactivetables/v/f1994de637e6b82da52c28fd3069d39bf2bab39e/))
 was automatically generated
-from [duerrsimon/interactivetables@b910729](https://github.com/duerrsimon/interactivetables/tree/b910729b3a6766b6d19215c890a035f20d0f6958)
+from [duerrsimon/interactivetables@f1994de](https://github.com/duerrsimon/interactivetables/tree/f1994de637e6b82da52c28fd3069d39bf2bab39e)
 on July 2, 2020.
 </em></small>
 
@@ -355,9 +355,9 @@ White background specified to serve as a backdrop for transparent sections of th
 | Game 8 | 3 | 1 | 38 | 34 |
 | Game 9 | 13 | 10 | 23 | 13 |
 
-Table: A table with a top caption and specified relative column widths.
-{#tbl:interactive-bowling}
+
 </div>
+
 
 
 | *Bowling Scores* | Jane          | John          | Alice         | Bob           |
@@ -376,8 +376,7 @@ Table: A table with a top caption and specified relative column widths.
 | Game 9 | 13 | 10 | 23 | 13 |
 | Game 7 | 153 | 180 | 28 | 134 |
 | Game 8 | 3 | 1 | 38 | 34 |
-| Game 9 | 13 | 10 | 23 | 13 |
-<!-- $id="element_id" class="interactive" $data-perPage="10" -->
+| Game 9 | 13 | 10 | 23 | 13 | <!-- class="interactive" -->
 
 Table: A table with a top caption and specified relative column widths.
 {#tbl:interactive-bowling-2}
