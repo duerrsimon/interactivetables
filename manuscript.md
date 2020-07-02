@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/234a6cc75b7bdaadddbacadebb2f8fd7d673629d/" />
+  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/76903d35ddc42860970e7a110d29fd515d22f3ce/" />
 
-  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/234a6cc75b7bdaadddbacadebb2f8fd7d673629d/" />
+  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/76903d35ddc42860970e7a110d29fd515d22f3ce/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/234a6cc75b7bdaadddbacadebb2f8fd7d673629d/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/76903d35ddc42860970e7a110d29fd515d22f3ce/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,9 +103,9 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://duerrsimon.github.io/interactivetables/v/234a6cc75b7bdaadddbacadebb2f8fd7d673629d/))
+([permalink](https://duerrsimon.github.io/interactivetables/v/76903d35ddc42860970e7a110d29fd515d22f3ce/))
 was automatically generated
-from [duerrsimon/interactivetables@234a6cc](https://github.com/duerrsimon/interactivetables/tree/234a6cc75b7bdaadddbacadebb2f8fd7d673629d)
+from [duerrsimon/interactivetables@76903d3](https://github.com/duerrsimon/interactivetables/tree/76903d35ddc42860970e7a110d29fd515d22f3ce)
 on July 2, 2020.
 </em></small>
 
@@ -334,10 +334,12 @@ White background specified to serve as a backdrop for transparent sections of th
 ## Tables
 
 
-Table: A table with a top caption and specified relative column widths.
-{#tbl:interactive-bowling}
+
 
 <div class="interactive" data-perPage="10">
+
+Table: A table with a top caption and specified relative column widths.
+{#tbl:interactive-bowling}
 
 | *Bowling Scores* | Jane          | John          | Alice         | Bob           |
 |:-----------------|:-------------:|:-------------:|:-------------:|:-------------:|
