@@ -82,53 +82,9 @@
   <!--[if lt IE 9]>
     <script src="//cdnjs.cloudflare.com/ajax/libs/html5shiv/3.7.3/html5shiv-printshiv.min.js"></script>
   <![endif]-->
-  <!--
-  Manubot generated metadata rendered from header-includes-template.html.
-  Suggest improvements at https://github.com/manubot/manubot/blob/master/manubot/process/header-includes-template.html
-  -->
-  <meta name="dc.format" content="text/html" />
-  <meta name="dc.title" content="Manuscript Title" />
-  <meta name="citation_title" content="Manuscript Title" />
-  <meta property="og:title" content="Manuscript Title" />
-  <meta property="twitter:title" content="Manuscript Title" />
-  <meta name="dc.date" content="2020-07-02" />
-  <meta name="citation_publication_date" content="2020-07-02" />
-  <meta name="dc.language" content="en-US" />
-  <meta name="citation_language" content="en-US" />
-  <meta name="dc.relation.ispartof" content="Manubot" />
-  <meta name="dc.publisher" content="Manubot" />
-  <meta name="citation_journal_title" content="Manubot" />
-  <meta name="citation_technical_report_institution" content="Manubot" />
-  <meta name="citation_author" content="John Doe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <meta name="twitter:creator" content="@johndoe" />
-  <meta name="citation_author" content="Jane Roe" />
-  <meta name="citation_author_institution" content="Department of Something, University of Whatever" />
-  <meta name="citation_author_institution" content="Department of Whatever, University of Something" />
-  <meta name="citation_author_orcid" content="XXXX-XXXX-XXXX-XXXX" />
-  <link rel="canonical" href="https://duerrsimon.github.io/interactivetables/" />
-  <meta property="og:url" content="https://duerrsimon.github.io/interactivetables/" />
-  <meta property="twitter:url" content="https://duerrsimon.github.io/interactivetables/" />
-  <meta name="citation_fulltext_html_url" content="https://duerrsimon.github.io/interactivetables/" />
-  <meta name="citation_pdf_url" content="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
-  <link rel="alternate" type="application/pdf" href="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
-  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/" />
-  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/" />
-  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/manuscript.pdf" />
-  <meta property="og:type" content="article" />
-  <meta property="twitter:card" content="summary_large_image" />
-  <link rel="icon" type="image/png" sizes="192x192" href="https://manubot.org/favicon-192x192.png" />
-  <link rel="mask-icon" href="https://manubot.org/safari-pinned-tab.svg" color="#ad1457" />
-  <meta name="theme-color" content="#ad1457" />
-  <!-- end Manubot generated metadata -->
-  
-  <!-- pandoc-eqnos: equation style -->
-  <style>
-    .eqnos { display: inline-block; position: relative; width: 100%; }
-    .eqnos br { display: none; }
-    .eqnos-number { position: absolute; right: 0em; top: 50%; line-height: 0; }
-  </style>
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.7.1/css/tabulator_simple.min.css" rel="stylesheet">
+  <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.7.1/dist/js/tabulator.min.js"></script>
+  <script type="text/javascript" src="https://oss.sheetjs.com/sheetjs/xlsx.full.min.js"></script>
 </head>
 <body>
 <header id="title-block-header">
@@ -136,9 +92,9 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://duerrsimon.github.io/interactivetables/v/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760/">permalink</a>)
+(<a href="https://duerrsimon.github.io/interactivetables/v/13de2ed7db7c6dafab4c8a5b61774a95d6a35ee2/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/duerrsimon/interactivetables/tree/4d8cbee1dc1f3efdd1fdb79788df063b2cb40760">duerrsimon/interactivetables@4d8cbee</a>
+from <a href="https://github.com/duerrsimon/interactivetables/tree/13de2ed7db7c6dafab4c8a5b61774a95d6a35ee2">duerrsimon/interactivetables@13de2ed</a>
 on July 2, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
@@ -297,6 +253,9 @@ White background specified to serve as a backdrop for transparent sections of th
 </figure>
 </div>
 <h2 id="tables">Tables</h2>
+<p>Table: A table with a top caption and specified relative column widths.
+{#tbl:bowling-scores-interactive}</p>
+<div class="interactive">
 <table>
 <thead>
 <tr class="header">
@@ -415,6 +374,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tr>
 </tbody>
 </table>
+</div>
 <div id="tbl:bowling-scores" class="tablenos">
 <table>
 <caption><span>Table 1:</span> A table with a top caption and specified relative column widths.
@@ -491,7 +451,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:2b45b670-68dd-48e8-8c46-7b181c9689c2" class="tablenos">
+<div id="tbl:1ae443a8-1ddb-46f3-9e18-ea7f1fcb4eaf" class="tablenos">
 <table>
 <caption><span>Table 3:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -4556,5 +4516,26 @@ DOI: <a href="https://doi.org/10.1371/journal.pcbi.1007128">10.1371/journal.pcbi
 <!-- analytics plugin -->
 
 <!-- copy and paste code from Google Analytics or similar service here -->
+<script>
+var tables = document.getElementsByClassName("interactive");
+console.log(tables);
+for (var i = 0; i < tables.length; i++) {
+   console.log(tables.item(i).childNodes[0])
+   var table = new Tabulator(tables.item(i).firstElementChild, {});
+}
+
+   
+    document.getElementById("download-csv").addEventListener("click", function(){
+    table.download("csv", "data.csv");
+});
+
+
+
+//trigger download of data.xlsx file
+document.getElementById("download-xlsx").addEventListener("click", function(){
+    table.download("xlsx", "data.xlsx", {sheetName:"My Data"});
+});
+
+</script>
 </body>
 </html>
