@@ -31,8 +31,7 @@
 
 <script>
 
-enquire.register("screen", {
-    match: function() { 
+if (window.matchMedia("screen").matches) {
         var tables = document.getElementsByClassName("interactive");
         var tabulators = []
 
@@ -63,7 +62,7 @@ enquire.register("screen", {
             btn_container.appendChild(btn);
             btn_container.appendChild(btnxslx);
 
-            tabulators.push(new Tabulator(tables.item(i).firstElementChild, {
+            tabulators.push(new Tabulator(tables.item(i).firstElementChild.firstElementChild, {
                     layout:"fitColumns", 
                     paginationSize:tables[i].dataset.perpage, 
                     pagination:"local",
@@ -73,7 +72,7 @@ enquire.register("screen", {
 
         }
     }
-});
+
 
 
 
