@@ -30,45 +30,55 @@
 
 
 <script>
-var tables = document.getElementsByClassName("interactive");
-var tabulators = []
 
-for (var i = 0; i < tables.length; i++) { 
-    
-    var btn_container=document.createElement("div");
-    btn_container.classList.add("tabulator-footer");
+enquire.register("screen", {
+    match: function() { 
+        var tables = document.getElementsByClassName("interactive");
+        var tabulators = []
 
-    var btn=document.createElement("BUTTON"); // Create a <button> element
-    btn.classList.add("tabulator-page");
+        for (var i = 0; i < tables.length; i++) { 
+            
+            var btn_container=document.createElement("div");
+            btn_container.classList.add("tabulator-footer");
 
-    btn.innerHTML = "csv";
-    btn.setAttribute('data-integer', i)
-    //tables[i].appendChild(btn);
-    btn.addEventListener("click", function(){
-    tabulators[btn.dataset.integer].download("csv", "data.csv");
-    });
+            var btn=document.createElement("BUTTON"); // Create a <button> element
+            btn.classList.add("tabulator-page");
 
-    var btnxslx = document.createElement("BUTTON"); // Create a <button> element
-    btnxslx.innerHTML = "xslx";
-    btnxslx.classList.add("tabulator-page");
-    btnxslx.setAttribute('data-integer', i)
-    //tables[i].appendChild(btnxslx);
-    btnxslx.addEventListener("click", function(){
-        tabulators[btnxslx.dataset.integer].download("xlsx", "data.xlsx", {sheetName:"TableData"});
-    });
+            btn.innerHTML = "csv";
+            btn.setAttribute('data-integer', i)
+            //tables[i].appendChild(btn);
+            btn.addEventListener("click", function(){
+            tabulators[btn.dataset.integer].download("csv", "data.csv");
+            });
 
-    btn_container.appendChild(btn);
-    btn_container.appendChild(btnxslx);
+            var btnxslx = document.createElement("BUTTON"); // Create a <button> element
+            btnxslx.innerHTML = "xslx";
+            btnxslx.classList.add("tabulator-page");
+            btnxslx.setAttribute('data-integer', i)
+            //tables[i].appendChild(btnxslx);
+            btnxslx.addEventListener("click", function(){
+                tabulators[btnxslx.dataset.integer].download("xlsx", "data.xlsx", {sheetName:"TableData"});
+            });
 
-    tabulators.push(new Tabulator(tables.item(i).firstElementChild, {
-            layout:"fitColumns", 
-            paginationSize:tables[i].dataset.perpage, 
-            pagination:"local",
-            footerElement:btn_container,
-            })
-        );
+            btn_container.appendChild(btn);
+            btn_container.appendChild(btnxslx);
 
-}
+            tabulators.push(new Tabulator(tables.item(i).firstElementChild, {
+                    layout:"fitColumns", 
+                    paginationSize:tables[i].dataset.perpage, 
+                    pagination:"local",
+                    footerElement:btn_container,
+                    })
+                );
+
+        }
+    }
+});
+
+
+
+
+
 
 
 </script>
