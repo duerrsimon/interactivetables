@@ -6,7 +6,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes" />
   <meta name="author" content="John Doe" />
   <meta name="author" content="Jane Roe" />
-  <meta name="dcterms.date" content="2020-07-02" />
+  <meta name="dcterms.date" content="2020-07-03" />
   <meta name="keywords" content="markdown, publishing, manubot" />
   <title>Manuscript Title</title>
   <style>
@@ -85,7 +85,7 @@
   <link href="https://cdnjs.cloudflare.com/ajax/libs/tabulator/4.7.1/css/tabulator_simple.min.css" rel="stylesheet">
 
   <script type="text/javascript" src="https://unpkg.com/tabulator-tables@4.7.1/dist/js/tabulator.min.js"></script>
-  <script type="text/javascript" src="https://oss.sheetjs.com/sheetjs/xlsx.full.min.js"></script>
+  <!-- <script type="text/javascript" src="https://oss.sheetjs.com/sheetjs/xlsx.full.min.js"></script>-->
 
 </head>
 <body>
@@ -94,10 +94,10 @@
 </header>
 <p><small><em>
 This manuscript
-(<a href="https://duerrsimon.github.io/interactivetables/v/1fd2754831b7f807d155ea373b5241db8ec8f110/">permalink</a>)
+(<a href="https://duerrsimon.github.io/interactivetables/v/aa3767756fdae5837e312eeea6c0ad8bc541c0a9/">permalink</a>)
 was automatically generated
-from <a href="https://github.com/duerrsimon/interactivetables/tree/1fd2754831b7f807d155ea373b5241db8ec8f110">duerrsimon/interactivetables@1fd2754</a>
-on July 2, 2020.
+from <a href="https://github.com/duerrsimon/interactivetables/tree/aa3767756fdae5837e312eeea6c0ad8bc541c0a9">duerrsimon/interactivetables@aa37677</a>
+on July 3, 2020.
 </em></small></p>
 <h2 id="authors">Authors</h2>
 <ul>
@@ -577,7 +577,7 @@ White background specified to serve as a backdrop for transparent sections of th
 </tbody>
 </table>
 </div>
-<div id="tbl:9ba90af2-6f9d-4194-ab64-a2f70cf82503" class="tablenos">
+<div id="tbl:e7276804-61e5-404d-a90d-d59cc707603f" class="tablenos">
 <table>
 <caption><span>Table 5:</span> A table with merged cells using the <code>attributes</code> plugin.
 </caption>
@@ -4694,17 +4694,17 @@ if (window.matchMedia("screen").matches) {
             tabulators[btn.dataset.integer].download("csv", "data.csv");
             });
 
-            var btnxslx = document.createElement("BUTTON"); // Create a <button> element
-            btnxslx.innerHTML = "xslx";
-            btnxslx.classList.add("tabulator-page");
-            btnxslx.setAttribute('data-integer', i)
-            //tables[i].appendChild(btnxslx);
-            btnxslx.addEventListener("click", function(){
-                tabulators[btnxslx.dataset.integer].download("xlsx", "data.xlsx", {sheetName:"TableData"});
-            });
+            //var btnxslx = document.createElement("BUTTON"); // Create a <button> element
+            //btnxslx.innerHTML = "xslx";
+            //btnxslx.classList.add("tabulator-page");
+            //btnxslx.setAttribute('data-integer', i)
+            
+            //btnxslx.addEventListener("click", function(){
+            //    tabulators[btnxslx.dataset.integer].download("xlsx", "data.xlsx", {sheetName:"TableData"});
+            //});
 
             btn_container.appendChild(btn);
-            btn_container.appendChild(btnxslx);
+            //btn_container.appendChild(btnxslx);
 
             tabulators.push(new Tabulator(tables.item(i).firstElementChild.firstElementChild, {
                     layout:"fitColumns", 
