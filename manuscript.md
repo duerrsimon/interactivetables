@@ -4,7 +4,7 @@ author-meta:
 - Jane Roe
 bibliography:
 - content/manual-references.json
-date-meta: '2020-07-02'
+date-meta: '2020-07-03'
 header-includes: '<!--
 
   Manubot generated metadata rendered from header-includes-template.html.
@@ -23,9 +23,9 @@ header-includes: '<!--
 
   <meta property="twitter:title" content="Manuscript Title" />
 
-  <meta name="dc.date" content="2020-07-02" />
+  <meta name="dc.date" content="2020-07-03" />
 
-  <meta name="citation_publication_date" content="2020-07-02" />
+  <meta name="citation_publication_date" content="2020-07-03" />
 
   <meta name="dc.language" content="en-US" />
 
@@ -67,11 +67,11 @@ header-includes: '<!--
 
   <link rel="alternate" type="application/pdf" href="https://duerrsimon.github.io/interactivetables/manuscript.pdf" />
 
-  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/1fd2754831b7f807d155ea373b5241db8ec8f110/" />
+  <link rel="alternate" type="text/html" href="https://duerrsimon.github.io/interactivetables/v/aa3767756fdae5837e312eeea6c0ad8bc541c0a9/" />
 
-  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/1fd2754831b7f807d155ea373b5241db8ec8f110/" />
+  <meta name="manubot_html_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/aa3767756fdae5837e312eeea6c0ad8bc541c0a9/" />
 
-  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/1fd2754831b7f807d155ea373b5241db8ec8f110/manuscript.pdf" />
+  <meta name="manubot_pdf_url_versioned" content="https://duerrsimon.github.io/interactivetables/v/aa3767756fdae5837e312eeea6c0ad8bc541c0a9/manuscript.pdf" />
 
   <meta property="og:type" content="article" />
 
@@ -103,10 +103,10 @@ title: Manuscript Title
 
 <small><em>
 This manuscript
-([permalink](https://duerrsimon.github.io/interactivetables/v/1fd2754831b7f807d155ea373b5241db8ec8f110/))
+([permalink](https://duerrsimon.github.io/interactivetables/v/aa3767756fdae5837e312eeea6c0ad8bc541c0a9/))
 was automatically generated
-from [duerrsimon/interactivetables@1fd2754](https://github.com/duerrsimon/interactivetables/tree/1fd2754831b7f807d155ea373b5241db8ec8f110)
-on July 2, 2020.
+from [duerrsimon/interactivetables@aa37677](https://github.com/duerrsimon/interactivetables/tree/aa3767756fdae5837e312eeea6c0ad8bc541c0a9)
+on July 3, 2020.
 </em></small>
 
 ## Authors
