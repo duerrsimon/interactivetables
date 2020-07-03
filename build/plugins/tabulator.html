@@ -50,17 +50,17 @@ if (window.matchMedia("screen").matches) {
             tabulators[btn.dataset.integer].download("csv", "data.csv");
             });
 
-            var btnxslx = document.createElement("BUTTON"); // Create a <button> element
-            btnxslx.innerHTML = "xslx";
-            btnxslx.classList.add("tabulator-page");
-            btnxslx.setAttribute('data-integer', i)
-            //tables[i].appendChild(btnxslx);
-            btnxslx.addEventListener("click", function(){
-                tabulators[btnxslx.dataset.integer].download("xlsx", "data.xlsx", {sheetName:"TableData"});
-            });
+            //var btnxslx = document.createElement("BUTTON"); // Create a <button> element
+            //btnxslx.innerHTML = "xslx";
+            //btnxslx.classList.add("tabulator-page");
+            //btnxslx.setAttribute('data-integer', i)
+            
+            //btnxslx.addEventListener("click", function(){
+            //    tabulators[btnxslx.dataset.integer].download("xlsx", "data.xlsx", {sheetName:"TableData"});
+            //});
 
             btn_container.appendChild(btn);
-            btn_container.appendChild(btnxslx);
+            //btn_container.appendChild(btnxslx);
 
             tabulators.push(new Tabulator(tables.item(i).firstElementChild.firstElementChild, {
                     layout:"fitColumns", 
